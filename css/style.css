@@ -225,16 +225,17 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter,
 #fh5co-event,
 .fh5co-bg {
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-position: top center; */
+  /* background-repeat: no-repeat; */
   position: relative;
+  background-repeat : repeat;
 }
 
 .fh5co-bg {
-  background-position: center center;
+  /* background-position: center center; */
   width: 100%;
-  float: left;
+  /* float: left; */
   position: relative;
 }
 
@@ -401,8 +402,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
-  background: url('../images/background/repeat-background/so-white.png');
+  background: url('../images/background/repeat-background/white_wall_hash.png');
   background-size: cover;
+  background-repeat:repeat
   padding: 30px;
   width: 100%;
   float: left;
@@ -1143,7 +1145,7 @@ form label {
   /*background-image: url("../images/background/repeat-background/ep_naturalwhite.png");*/
   background-repeat : repeat;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #fh5co-testimonial{
