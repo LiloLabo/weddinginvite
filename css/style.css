@@ -497,8 +497,9 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #ffffff;
   background-image: url("../images/DSC05704.jpg");
   background-size: cover;
+  background-position: center;
   height: 100%;
-  width: 100%;
+  width: 100%; 
   position: fixed;
   top: 0;
   left: 0;
