@@ -57,6 +57,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.cdnfonts.com/css/wedding" rel="stylesheet">
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -194,9 +195,10 @@
 					</div>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-							<h1>Tika & Lilo</h1>
+							<p class="wedding-font" style="font-size: 30px;">Tika & Lilo</p>
 							<p style="margin-bottom: 0">Kepada Bapak/Ibu/Saudara/i</p>
 							<p id="kepada" style="font-weight: bold;font-family: 'Courgette', Arial, serif;">
+
 							</p>
 							<p>Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
 
@@ -217,7 +219,7 @@
 					src="images/background/flowers/top-left-2.svg">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<h2>The Wedding Of</h2>
+						<p class="wedding-font" style="font-size: 60px;">The Wedding Of</p>
 					</div>
 				</div>
 				<div class="row">
@@ -227,7 +229,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<h1>Tika & Lilo</h1>
+						<p class="wedding-font" style="font-size: 60px;">Tika & Lilo</p>
 						<h3 style="color: #bf9b73">Kami berharap Anda menjadi bagian dari hari istimewa kami!</h3>
 						<div class="simply-countdown simply-countdown-wedding"></div>
 						<!-- <div id="app">
@@ -467,7 +469,7 @@
 					kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum
 					yang berfikir.
 					<br>
-					<b class="parents-font">- Q.S Ar Rum : 21 -</b>
+					<b>- Q.S Ar Rum : 21 -</b>
 				</div>
 			</div>
 		</div>
@@ -789,7 +791,7 @@
 						</p>
 						<p class="parents-font">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
 						<p class="parents-font">Jazakumullahu Khairan</p>
-						<p class="parents-font" style="color:#113468;font-size: 30px;">Tika & Lilo</p>
+						<p class="wedding-font" style="color:#113468;font-size: 45px;">Tika & Lilo</p>
 						<br>
 						<!-- <img src="images/readme/DSC05772.jpg" width="100" height="100"> -->
 
@@ -849,6 +851,21 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
 
 	<script>
+		function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+				function (m, key, value) {
+					vars[key] = value;
+				});
+			return vars;
+		}
+		var kepada = getUrlVars()["kepada"];
+		if (kepada != null) {
+			// alert(fType);
+			const kepadaText = document.getElementById("kepada");
+			kepadaText.innerHTML = decodeURI(kepada);
+		}
+
 		function SalinRekening1() {
 			var copyText = "1541719125";
 			navigator.clipboard.writeText(copyText);
@@ -1067,20 +1084,7 @@
 		// Since we are using dynamic mode, we need to programmatically open lightGallery
 		inlineGallery.openGallery();
 
-		function getUrlVars() {
-			var vars = {};
-			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
-				function (m, key, value) {
-					vars[key] = value;
-				});
-			return vars;
-		}
-		var kepada = getUrlVars()["kepada"];
-		if (kepada != null) {
-			// alert(fType);
-			const kepadaText = document.getElementById("kepada");
-			kepadaText.innerHTML = decodeURI(kepada);
-		}
+
 		// document.getElementById.
 	</script>
 
