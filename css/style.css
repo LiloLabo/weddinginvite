@@ -1,6 +1,11 @@
 @font-face {
   font-family: "Wedding";
-  src: url("Wedding.ttf");
+  src: url("Wedding.eot") format('embedded-opentype'),
+    /* EDIT correction on this line */
+    url('Wedding.woff') format('woff'),
+    /* Modern Browsers */
+    url('Wedding.ttf') format('truetype'),
+    /* Safari, Android, iOS */
 }
 
 /* =======================================================
