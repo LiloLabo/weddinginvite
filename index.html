@@ -9,19 +9,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>The Wedding of Tika & Lilo</title>
+	<title>The Wedding of Astika & Lilo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="The Wedding of Tika & Lilo" />
+	<meta name="description" content="The Wedding of Astika & Lilo" />
 	<meta name="keywords" content="wedding, wedding invitation, invitation, the wedding" />
-	<meta name="author" content="Tika & Lilo" />
+	<meta name="author" content="Astika & Lilo" />
 
 	<!-- Facebook and Twitter integration -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="The Wedding of Tika & Lilo" />
+	<meta property="og:title" content="The Wedding of Astika & Lilo" />
 	<!-- <meta property="og:image" content="images/readme/DSC05772.jpg"/> -->
 	<meta property="og:url" content="https://localhost" />
-	<meta property="og:site_name" content="The Wedding of Tika & Lilo" />
-	<meta property="og:description" content="The Wedding of Tika & Lilo." />
+	<meta property="og:site_name" content="The Wedding of Astika & Lilo" />
+	<meta property="og:description" content="The Wedding of Astika & Lilo." />
 
 	<!-- <meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@ngodingsolusi" />
@@ -194,7 +194,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-							<p class="wedding-font" style="font-size: 30px;">Tika & Lilo</p>
+							<p class="wedding-font" style="font-size: 30px;">Astika & Lilo</p>
 							<p style="margin-bottom: 0">Kepada Bapak/Ibu/Saudara/i</p>
 							<p id="kepada" style="font-weight: bold;font-family: 'Courgette', Arial, serif;">
 
@@ -228,7 +228,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<p class="wedding-font" style="font-size: 40px;color: #0064d9;">Tika & Lilo</p>
+						<p class="wedding-font" style="font-size: 40px;color: #0064d9;">Astika & Lilo</p>
 						<h3 style="color: #bf9b73;font-family: 'Courgette', Arial, serif;">Kami berharap Anda menjadi
 							bagian dari hari
 							istimewa kami!</h3>
@@ -807,7 +807,7 @@
 						</p>
 						<p class="parents-font">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
 						<p class="parents-font">Jazakumullahu Khairan</p>
-						<p class="wedding-font" style="color:#113468;font-size: 40px;">Tika & Lilo</p>
+						<p class="wedding-font" style="color:#113468;font-size: 40px;">Astika & Lilo</p>
 						<br>
 						<!-- <img src="images/readme/DSC05772.jpg" width="100" height="100"> -->
 
@@ -884,14 +884,30 @@
 
 		function SalinRekening1() {
 			var copyText = "1541719125";
-			navigator.clipboard.writeText(copyText);
-			alert("Berhasil disalin " + copyText);
+			// navigator.clipboard.writeText(copyText);
+			navigator.clipboard
+				.writeText(copyText)
+				.then(() => {
+					alert("Berhasil disalin " + copyText);
+				})
+				.catch(() => {
+					alert("something went wrong");
+				});
+			// alert("Berhasil disalin " + copyText);
 		}
 
 		function SalinRekening2() {
 			var copyText = "607301026620538";
-			navigator.clipboard.writeText(copyText);
-			alert("Berhasil disalin " + copyText);
+			navigator.clipboard
+				.writeText(copyText)
+				.then(() => {
+					alert("Berhasil disalin " + copyText);
+				})
+				.catch(() => {
+					alert("something went wrong");
+				});
+			// navigator.clipboard.writeText(copyText);
+			// alert("Berhasil disalin " + copyText);
 		}
 		day = 7;
 		month = 3 - 1;
