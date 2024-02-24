@@ -189,7 +189,7 @@
 					<div class="row">
 						<div
 							class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box fadeInUp animated-fast">
-							<img src="images/readme/half-flower.png" alt="" class="couple-main">
+							<img src="images/readme/half-flower_compressed.png" alt="" class="couple-main">
 						</div>
 					</div>
 					<div class="row">
@@ -223,7 +223,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<img src="images/readme/photo3_alt.png" alt="" class="couple-main">
+						<img src="images/readme/photo_alt4.png" alt="" class="couple-main">
 					</div>
 				</div>
 				<div class="row">
@@ -388,7 +388,7 @@
 			</div>
 		</div>
 
-		<div id="fh5co-gallery">
+		<div id="fh5co-gallery" style="padding: 0px">
 
 			<!-- <div class="container">
 				<div class="row">
@@ -630,13 +630,12 @@
 							(function () { // DON'T EDIT BELOW THIS LINE
 								var d = document,
 									s = d.createElement('script');
-								s.src = 'https://wedding-hi8fjouuxg.disqus.com/embed.js';
+								s.src = 'https://wed-11.disqus.com/embed.js';
 								s.setAttribute('data-timestamp', +new Date());
 								(d.head || d.body).appendChild(s);
 							})();
 						</script>
-						<noscript>Please enable JavaScript to view the <a
-								href="https://disqus.com/?ref_noscript"></a></noscript>
+						<noscript><a href="https://disqus.com/?ref_noscript"></a></noscript>
 
 
 						<!-- <div class="row animate-box">
@@ -719,7 +718,7 @@
 								style="border-radius: 25px;border: 2px solid #d4d3f1;padding: 10px;background-color: white;">
 								<h4 style="font-weight: bold;font-family: 'Courgette', Arial, serif;color:#a0a0a0;">Bank
 									BNI -
-									1541719125</h4>
+									1541 719 125</h4>
 								<!-- <div class="event-col">
 									<i class="icon-clock"></i>
 									<span>09:00</span>
@@ -748,8 +747,7 @@
 							<div class="event-wrap animate-box"
 								style="border-radius: 25px;border: 2px solid #d4d3f1;padding: 10px;background-color: white;">
 								<h4 style="font-weight: bold;font-family: 'Courgette', Arial, serif;color:#a0a0a0;">Bank
-									BRI - 6073
-									0102 6620 538</h4>
+									BCA - 0471 991 111</h4>
 								<!-- <div class="event-col">
 									<i class="icon-clock"></i>
 									<span>11:00</span>
@@ -767,7 +765,7 @@
 								<h4 style="font-weight: bold;font-family: 'Courgette', Arial, serif;color:#a0a0a0;">a.n.
 									Nur Astika
 									Amalia</h4>
-								<button class="btn" onclick="SalinRekening2();"><i class="fa fa-copy"></i> Salin
+								<button class="btn" onclick="SalinRekening3();"><i class="fa fa-copy"></i> Salin
 									Rekening</button>
 								<!-- <p style="font-family: 'Courgette', Arial, serif">Jl. Kemiri No. 4 RT 01/06 Dampyak
 									Kramat, Kab. Tegal
@@ -811,11 +809,14 @@
 						<br>
 						<!-- <img src="images/readme/DSC05772.jpg" width="100" height="100"> -->
 
-						<p>
-
-							<!-- © Copyright 2022 NIKAH DIGITAL All Rights Reserved </br> -->
-							<!-- <small>Instagram : nikahdigitalcom | Whatsapp : (+62) 853-6006-1021 | NikahDigital.com |halo@nikahdigital.com</small> -->
-							<!-- <ul class="fh5co-social-icons">
+						<p style="color: #bf9b73;font-family: 'Courgette', Arial, serif;">
+							Powered by <a target="_blank" href="https://godong.id/">godong.id</a> | <a target="_blank"
+								href="https://diko.co.id/">Diko </a> | <a target="_blank"
+								href="https://marstech.co.id/">Marstech</a>
+						</p>
+						<!-- © Copyright 2022 NIKAH DIGITAL All Rights Reserved </br> -->
+						<!-- <small>Instagram : nikahdigitalcom | Whatsapp : (+62) 853-6006-1021 | NikahDigital.com |halo@nikahdigital.com</small> -->
+						<!-- <ul class="fh5co-social-icons">
 						<li><a target="_blank" href="https://wa.me/6285360061021/"><i class="icon-phone"></i></a></li>
 						<li><a target="_blank" href="https://nikahdigital.com/"><i class="icon-globe"></i></a></li>
 						<li><a target="_blank" href="https://www.instagram.com/nikahdigitalcom/"><i class="icon-instagram"></i></a></li>
@@ -898,6 +899,20 @@
 
 		function SalinRekening2() {
 			var copyText = "607301026620538";
+			navigator.clipboard
+				.writeText(copyText)
+				.then(() => {
+					alert("Berhasil disalin " + copyText);
+				})
+				.catch(() => {
+					alert("something went wrong");
+				});
+			// navigator.clipboard.writeText(copyText);
+			// alert("Berhasil disalin " + copyText);
+		}
+
+		function SalinRekening3() {
+			var copyText = "0471991111";
 			navigator.clipboard
 				.writeText(copyText)
 				.then(() => {
