@@ -465,7 +465,7 @@ figure {
 
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
-  background: url('../images/background/repeat-background/white_wall_hash.png');
+  background: url('../images/background/repeat-background/so-white.png');
   background-size: cover;
   background-repeat: repeat padding: 30px;
   width: 100%;
@@ -475,6 +475,7 @@ figure {
   -ms-border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 7px 6px #ccc;
+  padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
